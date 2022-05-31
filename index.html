@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <h1 class="visually-hidden">My Website ASHtech</h1>
+
+    <!-- header start  -->
+    <header class="header">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <nav class="header__nav container">
+            <a href="index.html" class="header__nav-logo">
+                ASH<span>tech</span>
+            </a>
+
+            <li class="header__nav-item my-2 d-none d-lg-block">
+                <a class="header__nav-link active text-center" href="index.html">Home</a>
+            </li>
+
+            <div class="dropdown drop-styles d-none d-lg-block">
+                <button class="btn btn-outline-none text-light dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="html.html" target="_blank">HTML</a>
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="css.html" target="_blank">CSS</a>
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="sass.html" target="_blank">SASS</a>
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="bootstrap.html" target="_blank">Bootstrap</a>
+                    </li>
+                    <li class="header__nav-item mt-2 mb-3">
+                        <a class="header__nav-link" href="js.html" target="_blank">JavaScript</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link about m-0" href="about.html" target="_blank"
+                            title="saytning asoschisi haqida">
+                            About CEO
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <li class="header__nav-item mt-2 mb-3 d-none d-lg-block">
+                <a class="header__nav-link" href="js.html" target="_blank">My tasks</a>
+            </li>
+            <a href="contact.html" class="header__nav-about d-none d-lg-block" target="_blank"
+                title="Biz bilan bog'lanish">
+                Contact us
+            </a>
+
+            <button type="button" class="text-light fs-1 btn d-lg-none" aria-label="open" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&equiv;</button>
+        </nav>
+    </header>
+
+    <div class="offcanvas offcanvas-menu d-lg-none offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close text-reset text-light offcanvas-clos" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="header__nav-list d-flex flex-column align-items-center">
+                <li class="header__nav-item mb-2">
+                    <a class="header__nav-link active" href="index.html">Bosh sahifa</a>
+                </li>
+                <li class="header__nav-item mb-2">
+                    <a class="header__nav-link" href="html.html" target="_blank">HTML</a>
+                </li>
+                <li class="header__nav-item mb-2">
+                    <a class="header__nav-link" href="css.html" target="_blank">CSS</a>
+                </li>
+                <li class="header__nav-item mb-2">
+                    <a class="header__nav-link" href="sass.html" target="_blank">SASS</a>
+                </li>
+                <li class="header__nav-item mb-2">
+                    <a class="header__nav-link" href="bootstrap.html" target="_blank">Bootstrap</a>
+                </li>
+                <li class="header__nav-item mb-2">
+                    <a class="header__nav-link" href="js.html" target="_blank">JavaScript</a>
+                </li>
+                <li class="header__nav-item mb-2">
+                    <a class="header__nav-link" href="js.html" target="_blank">My tasks</a>
+                </li>
+                <li class="header__nav-item mb-5">
+                    <a class="header__nav-link about ms-0" href="about.html" target="_blank"
+                        title="saytning asoschisi haqida">
+                        About CEO
+                    </a>
+                </li>
+            </ul>
+            <a href="contact.html" class="header__nav-about mx-auto off-contact" target="_blank"
+                title="Biz bilan bog'lanish">
+                Contact us
+            </a>
+        </div>
+    </div>
+    <!-- header end  -->
+    <main>
+        <!-- intro start  -->
+        <section class="intro">
+            <div class="container intro__content">
+                <div class="intro__left">
+                    <h2 class="intro__title">
+                        <span>Welcome</span> to our website
+                    </h2>
+                    <p class="intro__italic">
+                        Dasturlash sohasini qayerdan o'rgansam deb boshingiz qotayotgan bo'lsa bu sayt aynan siz uchun.
+                    </p>
+                </div>
+                <div class="intro__right">
+                    <hr>
+                    <p class="intro__right-text">
+                        Bu sayt asosan web-dasturlash sohasiga asoslangan bo'lib, siz bu yerda o'zingiz uchun
+                        boshlang'ich bo'lgan dasturlash sohasiga oid bilimlarni egallab,o'z bilimingizni
+                        mustahkamlashingiz mumkin bo'ladi.
+                    </p>
+                    <div class="intro__social">
+                        <a href="https://t.me/Mr_Shamsiddinov" target="_blank">
+                            <i class="fa-brands fa-telegram intro__social-icons"></i>
+                        </a>
+                        <a href="https://instagram.com/abbos_shamsiddin" target="_blank">
+                            <i class="fa-brands fa-instagram intro__social-icons"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100080024424694" target="_blank">
+                            <i class="fa-brands fa-facebook intro__social-icons"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abbosshamsiddin?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BF7VRgLcOQDmbdV%2FN1LhVwg%3D%3D"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in intro__social-icons"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- intro end  -->
+
+        <!-- tools start  -->
+        <section class="tools" id="main-content">
+            <div class="tools__container container">
+                <h3 class="tools__title">
+                    <span>ASH</span>tech start here.
+                </h3>
+                <ul class="tools__list">
+                    <li class="tools__item">
+                        <a href="./html.html" target="_blank">
+                            <img class="tools__logo" src="./images/html-logo.png" alt="logo" width="200" height="400">
+                            <h4 class="tools__name">
+                                Hyper text Markup Language
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="tools__item">
+                        <a href="./css.html" target="_blank">
+                            <img class="tools__logo" src="./images/css-logo.png" alt="logo" width="200" height="400">
+                            <h4 class="tools__name">
+                                Cascading Stylesheets
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="tools__item">
+                        <a href="./sass.html" target="_blank">
+                            <img class="tools__logo" src="./images/sass-logo.png" alt="logo" width="200" height="400">
+                            <h4 class="tools__name">
+                                Syntactically Awesome Stylesheet
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="tools__item">
+                        <a href="./bootstrap.html" target="_blank">
+                            <img class="tools__logo" src="./images/bootstrap-logo.png" alt="logo" width="200"
+                                height="400">
+                            <h4 class="tools__name">
+                                Bootstrap
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="tools__item">
+                        <a href="./js.html" target="_blank">
+                            <img class="tools__logo" src="./images/js-logo.png" alt="logo" width="200" height="400">
+                            <h4 class="tools__name">
+                                JavaScript
+                            </h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer start  -->
+    <footer class="footer">
+        <div class="footer__all container">
+            <div class="footer__left">
+                <div class="footer__left-links">
+                    <a href="index.html" class="footer__logo">
+                        ASH<span>tech</span>
+                    </a>
+                    <div class="footer__nav">
+                        <a class="footer__nav-link" href="index.html">
+                            Bosh sahifa
+                        </a>
+                        <a href="about.html" target="_blank" class="footer__nav-link">
+                            About CEO
+                        </a>
+                    </div>
+                </div>
+                <address class="footer__address">
+                    UZB Tashkent city <br>
+                    Shaykhantahur region <br>
+                    Abdulla Kadiriy street <br>
+                    Call us: 619 0519
+                </address>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__social">
+                    <a href="https://t.me/Mr_Shamsiddinov" target="_blank">
+                        <i class="fa-brands fa-telegram footer__social-icons"></i>
+                    </a>
+                    <a href="https://instagram.com/abbos_shamsiddin" target="_blank">
+                        <i class="fa-brands fa-instagram footer__social-icons"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100080024424694" target="_blank">
+                        <i class="fa-brands fa-facebook footer__social-icons"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abbosshamsiddin?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BF7VRgLcOQDmbdV%2FN1LhVwg%3D%3D"
+                        target="_blank">
+                        <i class="fab fa-linkedin-in footer__social-icons"></i>
+                    </a>
+                </div>
+                <p class="footer__right-text">
+                    Copyright 2022. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

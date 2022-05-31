@@ -1,0 +1,137 @@
+.footer {
+    background-color: #06051a;
+    padding: 50px 0;
+
+    &__all {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+    }
+
+    &__left-links {
+        margin-right: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__logo {
+        font-size: 35px;
+        font-weight: 700;
+        margin-right: auto;
+        color: $coral;
+        transition: 0.2s ease;
+
+        span {
+            color: $white;
+        }
+    }
+
+    &__logo:hover {
+        opacity: 0.7;
+    }
+
+    &__nav-link {
+        color: $white;
+        transition: 0.2s ease;
+    }
+
+    &__nav-link:hover {
+        color: $pink;
+    }
+
+    &__nav-link:first-child {
+        margin-right: 15px;
+    }
+
+    &__address {
+        color: $white;
+        line-height: 2;
+        opacity: 0.6;
+    }
+
+    &__social-icons {
+        margin-right: 15px;
+        color: $white;
+        transition: 0.2s ease;
+    }
+
+    &__social-icons:hover {
+        color: $pink;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    &__right-text {
+        color: $white;
+        opacity: 0.6;
+    }
+};
+
+
+// Breakpoints
+
+
+// Breakpoint 975px
+@media only screen and (max-width: 975px) {
+    .footer__left-links {
+        margin-right: 100px;
+    }
+}
+
+
+// Breakpoint 780px
+@media only screen and (max-width: 780px) {
+    .footer__all {
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .footer__left-links {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 45px;
+    }
+
+    .footer__left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__right {
+        align-items: center;
+    }
+
+    .footer__address  {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__social {
+        margin-bottom: 20px;
+    }
+}
+
+
+// Breakpoin 310px
+@media only screen and (max-width: 310px) {
+    .footer__right-text {
+        width: 150px;
+        text-align: center;
+    }
+}

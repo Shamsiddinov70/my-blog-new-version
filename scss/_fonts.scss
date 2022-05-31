@@ -1,0 +1,40 @@
+/* public-sans-200 - latin */
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/public-sans-v11-latin-200.woff2') format('woff2'),
+         url('../fonts/public-sans-v11-latin-200.woff') format('woff');
+  }
+  /* public-sans-regular - latin */
+  @font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/public-sans-v11-latin-regular.woff2') format('woff2'),
+         url('../fonts/public-sans-v11-latin-regular.woff') format('woff');
+  }
+  /* public-sans-700 - latin */
+  @font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/public-sans-v11-latin-700.woff2') format('woff2'),
+         url('../fonts/public-sans-v11-latin-700.woff') format('woff');
+  }
+  /* public-sans-900 - latin */
+  @font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local(''),
+         url('../fonts/public-sans-v11-latin-900.woff2') format('woff2'),
+         url('../fonts/public-sans-v11-latin-900.woff') format('woff');
+  }

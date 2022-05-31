@@ -1,0 +1,83 @@
+.tools {
+    background-color: $tools-color;
+    padding: 100px 0;
+
+    &__title {
+        color: $white;
+        font-size: 65px;
+        text-align: center;
+        margin-bottom: 90px;
+
+        span {
+            color: $coral;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__name {
+        color: $white;
+        font-size: 25px;
+        width: 235px;
+        text-align: center;
+        opacity: 0.7;
+    }
+
+    &__item {
+        box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        padding: 24px 58px;
+        background: $tools-color;
+        width: 350px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 75px;
+        transition: 0.3s ease;
+    }
+
+    &__item:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    &__item:hover &__logo {
+        transform: skew(5deg,10deg);
+    }
+
+    &__logo {
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.3s ease;
+    }
+}
+
+
+//Breakpoints
+
+
+//breakpoint 400px
+@media only screen and (max-width: 400px) {
+    .tools__title {
+        font-size: 50px;
+    }
+
+    .tools__item:hover {
+        transform: none;
+    }
+
+    .tools__item:hover .tools__logo {
+        transform: none;
+    }
+}
+
+//Breakpoint 350px
+@media only screen and (max-width: 350px) {
+    .tools__item {
+        padding: 8px 25px;
+    }
+}

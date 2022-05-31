@@ -1,0 +1,96 @@
+.header {
+    background-color: rgb(18, 18, 48);
+    padding: 30px 0;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav-logo {
+        font-size: 30px;
+        font-weight: 700;
+        margin-right: auto;
+        color: $coral;
+        transition: 0.2s ease;
+
+        span {
+            color: $white;
+        }
+    }
+
+    &__nav-logo:hover {
+        opacity: 0.8;
+    }
+
+    &__nav-logo:active {
+        opacity: 0.6;
+    }
+
+    &__nav-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav-item {
+        margin-left: 35px;
+        margin-right: auto;
+
+
+        .about {
+            margin-left: 30px;
+        }
+
+        .active {
+            color: $pink;
+        }
+    }
+
+    &__nav-link {
+        color: $white;
+        font-size: 16px;
+        transition: 0.2s ease;
+    }
+
+
+    &__nav-link:hover {
+        color: $pink;
+    }
+
+    &__nav-about {
+        // margin-left: 100px;
+        color: $white;
+        font-size: 16px;
+        background-color: rgb(71, 64, 174);
+        padding: 10px 20px;
+        border-radius: 40px;
+        transition: 0.3s ease;
+    }
+
+    &__nav-about:hover {
+        background-color: $white;
+        color: rgb(71, 64, 174);;
+    }
+
+    &__nav-about:active {
+        opacity: 0.7;
+    }
+
+    .drop-styles {
+        margin-left: 215px;
+    }
+
+}
+
+    .offcanvas-menu {
+        background-color: #003052;
+}
+
+
+    .offcanvas-clos {
+        background-color: #fff;
+}
+
+    .off-contact {
+         margin-left: 5% !important;
+}
