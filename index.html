@@ -27,7 +27,7 @@
             </a>
 
             <li class="header__nav-item my-2 d-none d-lg-block">
-                <a class="header__nav-link active text-center" href="index.html">Home</a>
+                <a class="header__nav-link active text-center home-link" href="index.html">Home</a>
             </li>
 
             <div class="dropdown drop-styles d-none d-lg-block">
@@ -64,7 +64,7 @@
             </div>
 
             <li class="header__nav-item mt-2 mb-3 d-none d-lg-block">
-                <a class="header__nav-link" href="js.html" target="_blank">My tasks</a>
+                <a class="header__nav-link" href="./task.html" target="_blank">My tasks</a>
             </li>
             <a href="contact.html" class="header__nav-about d-none d-lg-block" target="_blank"
                 title="Biz bilan bog'lanish">
@@ -74,52 +74,54 @@
             <button type="button" class="text-light fs-1 btn d-lg-none" aria-label="open" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&equiv;</button>
         </nav>
-    </header>
 
-    <div class="offcanvas offcanvas-menu d-lg-none offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel"></h5>
-            <button type="button" class="btn-close text-reset text-light offcanvas-clos" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
+
+        <div class="offcanvas offcanvas-menu d-md-none offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close text-reset text-light offcanvas-clos" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="header__nav-list d-flex flex-column align-items-center">
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="html.html" target="_blank">HTML</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="css.html" target="_blank">CSS</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="sass.html" target="_blank">SASS</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="bootstrap.html" target="_blank">Bootstrap</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="js.html" target="_blank">JavaScript</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="./task.html" target="_blank">My tasks</a>
+                    </li>
+                    <li class="header__nav-item mb-5">
+                        <a class="header__nav-link about ms-0" href="about.html" target="_blank"
+                            title="saytning asoschisi haqida">
+                            About CEO
+                        </a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="header__nav-about mx-auto off-contact" target="_blank"
+                    title="Biz bilan bog'lanish">
+                    Contact us
+                </a>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <ul class="header__nav-list d-flex flex-column align-items-center">
-                <li class="header__nav-item mb-2">
-                    <a class="header__nav-link active" href="index.html">Bosh sahifa</a>
-                </li>
-                <li class="header__nav-item mb-2">
-                    <a class="header__nav-link" href="html.html" target="_blank">HTML</a>
-                </li>
-                <li class="header__nav-item mb-2">
-                    <a class="header__nav-link" href="css.html" target="_blank">CSS</a>
-                </li>
-                <li class="header__nav-item mb-2">
-                    <a class="header__nav-link" href="sass.html" target="_blank">SASS</a>
-                </li>
-                <li class="header__nav-item mb-2">
-                    <a class="header__nav-link" href="bootstrap.html" target="_blank">Bootstrap</a>
-                </li>
-                <li class="header__nav-item mb-2">
-                    <a class="header__nav-link" href="js.html" target="_blank">JavaScript</a>
-                </li>
-                <li class="header__nav-item mb-2">
-                    <a class="header__nav-link" href="js.html" target="_blank">My tasks</a>
-                </li>
-                <li class="header__nav-item mb-5">
-                    <a class="header__nav-link about ms-0" href="about.html" target="_blank"
-                        title="saytning asoschisi haqida">
-                        About CEO
-                    </a>
-                </li>
-            </ul>
-            <a href="contact.html" class="header__nav-about mx-auto off-contact" target="_blank"
-                title="Biz bilan bog'lanish">
-                Contact us
-            </a>
-        </div>
-    </div>
+    </header>
     <!-- header end  -->
+
     <main>
         <!-- intro start  -->
         <section class="intro">

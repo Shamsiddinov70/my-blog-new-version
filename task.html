@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <h1 class="visually-hidden">My Website ASHtech</h1>
+
+    <!-- header start  -->
+    <header class="header">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <nav class="header__nav container">
+            <a href="index.html" class="header__nav-logo">
+                ASH<span>tech</span>
+            </a>
+
+            <li class="header__nav-item my-2 d-none d-lg-block">
+                <a class="header__nav-link text-center home-link" href="index.html">Home</a>
+            </li>
+
+            <div class="dropdown drop-styles d-none d-lg-block">
+                <button class="btn btn-outline-none text-light dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="html.html" target="_blank">HTML</a>
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="css.html" target="_blank">CSS</a>
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="sass.html" target="_blank">SASS</a>
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link" href="bootstrap.html" target="_blank">Bootstrap</a>
+                    </li>
+                    <li class="header__nav-item mt-2 mb-3">
+                        <a class="header__nav-link" href="js.html" target="_blank">JavaScript</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="header__nav-item my-2">
+                        <a class="header__nav-link about m-0" href="about.html" target="_blank"
+                            title="saytning asoschisi haqida">
+                            About CEO
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <li class="header__nav-item mt-2 mb-3 d-none d-lg-block">
+                <a class="header__nav-link active" href="./task.html" target="_blank">My tasks</a>
+            </li>
+            <a href="contact.html" class="header__nav-about d-none d-lg-block" target="_blank"
+                title="Biz bilan bog'lanish">
+                Contact us
+            </a>
+
+            <button type="button" class="text-light fs-1 btn d-lg-none" aria-label="open" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&equiv;</button>
+        </nav>
+
+
+        <div class="offcanvas offcanvas-menu d-lg-none offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close text-reset text-light offcanvas-clos" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="header__nav-list d-flex flex-column align-items-center">
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="html.html" target="_blank">HTML</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="css.html" target="_blank">CSS</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="sass.html" target="_blank">SASS</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="bootstrap.html" target="_blank">Bootstrap</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link" href="js.html" target="_blank">JavaScript</a>
+                    </li>
+                    <li class="header__nav-item mb-2">
+                        <a class="header__nav-link active" href="./task.html" target="_blank">My tasks</a>
+                    </li>
+                    <li class="header__nav-item mb-5">
+                        <a class="header__nav-link about ms-0" href="about.html" target="_blank"
+                            title="saytning asoschisi haqida">
+                            About CEO
+                        </a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="header__nav-about mx-auto off-contact" target="_blank"
+                    title="Biz bilan bog'lanish">
+                    Contact us
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>

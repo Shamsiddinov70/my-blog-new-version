@@ -50,8 +50,12 @@
         color: $white;
         font-size: 16px;
         transition: 0.2s ease;
+        margin-top: 8px;
     }
 
+    .home-link {
+        margin-top: 0px;
+    }
 
     &__nav-link:hover {
         color: $pink;
