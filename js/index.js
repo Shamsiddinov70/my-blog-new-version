@@ -105,6 +105,7 @@ elInput.addEventListener('keyup', handleAddTodo);
 elList.addEventListener('click', (evt) => {
     let elItem = evt.target.closest('.item');
     let foundTodoIndex = todos.findIndex((element => element.id === elItem.dataset.id));
+
     if (evt.target.matches('.delete')) return handleDeleteTodo(elItem);
     if (evt.target.matches('.edit')) return handleEditTodo(foundTodoIndex);
     if (evt.target.matches('.checkbox')) return handleCheckedTodo(evt, foundTodoIndex);
