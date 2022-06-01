@@ -13,7 +13,7 @@ let createTodoItem = (todo) => {
     let eldeleteBtn = elCreate('button');
 
 
-    elLi.className = 'd-flex align-items-center py-2 px-2 border-bottom item'
+    elLi.className = 'd-flex align-items-center py-2 px-2 border-bottom item ellist'
     elCheckboxInput.className = 'form-check-input mt-0 me-2 checkbox'
     elCheckboxInput.type = 'checkbox';
     elCheckboxInput.checked = todo.isComplated;
