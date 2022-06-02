@@ -102,9 +102,15 @@
 }
 
 
+//Breakpoints 980px
+@media only screen and (max-width: 980px) {
+    .home-link {
+        margin-left: -10px !important;
+    }
+}
+
 
 // Breakpoints 790px
-
 @media only screen and (max-width: 790px) {
     .header__nav-logo {
         font-size: 25px;
